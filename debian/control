@@ -1,0 +1,13 @@
+Source: sqdr-gstreamer
+Section: devel
+Priority: optional
+Maintainer: Francisco Alfonso <francisco.alfonso@squadrone-system.com>
+Build-Depends: debhelper (>= 10), git, python3, python3-pip, flex, bison, libmount-dev, nasm, meson, ninja-build, libglib2.0-dev-bin, cmake
+Standards-Version: 4.1.2
+
+Package: sqdr-gstreamer
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends} 
+Description: install version 1.18.4 of gstreamer
+  with the corresponding plugins needed for sqdr applications.
+
