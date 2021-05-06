@@ -32,7 +32,13 @@
 git checkout 1.18.4
 
 # Configure mason with omx 
-meson setup --buildtype=release \
+meson setup --prefix / \
+    --bindir usr/bin \
+    --datadir usr/share \
+    --libdir usr/lib \
+    --includedir usr/include \
+    --sbindir usr/sbin \
+    --buildtype=release \
 	-D omx=enabled \
 	-D gst-omx:target=rpi \
 	-D gst-omx:header_path=/opt/vc/include/IL \
