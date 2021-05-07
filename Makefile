@@ -12,6 +12,6 @@ build: gstreamer.install
 gstreamer.install:
 	./gstreamer-compile.install
 
-.PHONY: install
-install:
-	DESTDIR=/usr ninja -j4 -C build install
+# .PHONY: install
+# install:
+# 	DESTDIR=/usr ninja -j4 -C build install

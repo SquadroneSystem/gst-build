@@ -4,7 +4,7 @@ project('All GStreamer modules', 'c',
   default_options : ['buildtype=debugoptimized'])
 
 gst_version = '>= @0@'.format(meson.project_version())
-gst_branch = 'master'
+gst_branch = 'pedro'
 
 build_system = build_machine.system()
 cc = meson.get_compiler('c')

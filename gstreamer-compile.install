@@ -32,7 +32,7 @@
 git checkout 1.18.4
 
 # Configure mason with omx 
-meson setup --prefix / \
+meson setup --prefix=/usr \
     --bindir usr/bin \
     --datadir usr/share \
     --libdir usr/lib \
@@ -51,4 +51,4 @@ meson setup --prefix / \
 	-D gst-plugins-bad:srt=enabled \
 	build
 
-ninja -j4 -C build
+ninja -j4 -C build install
