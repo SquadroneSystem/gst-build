@@ -29,10 +29,10 @@
 	#echo "Cloning into current dir"
 #fi
 
-git checkout 1.18.4
+#git checkout 1.18.4
 
 # Configure mason with omx 
-meson setup --prefix=/usr \
+meson setup --prefix=/ \
     --bindir usr/bin \
     --datadir usr/share \
     --libdir usr/lib \
@@ -51,4 +51,4 @@ meson setup --prefix=/usr \
 	-D gst-plugins-bad:srt=enabled \
 	build
 
-ninja -j4 -C build install
+sudo ninja -j4 -C build install
